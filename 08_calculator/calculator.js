@@ -26,16 +26,45 @@ const sum = function(sumARR) {
   return sumARRTotal;
 };
 
-const multiply = function() {
+const multiply = function(productArr) {
+  let productArrTotal;
 
+  productArrTotal = 1;
+
+  for(let i = 0; i < productArr.length; i++) {
+    productArrTotal = productArr[i] * productArrTotal
+  }
+
+  return productArrTotal;
 };
 
-const power = function() {
-	
+const power = function(bNum, pNum) {
+	let empoweredNum;
+
+  empoweredNum = (Math.pow(bNum, pNum));
+
+  return empoweredNum;
 };
 
-const factorial = function() {
-	
+const factorial = function(factMe) {
+	// let factorialTotal;
+  // let indexProduct
+
+  // for(let i = 1; i < factMe; i++) {
+  //   factorialTotal = i + 1
+  //   indexProduct = factorialTotal * i
+  // }
+
+  // if(indexProduct > 0) {
+  //   return indexProduct;
+  // }else{
+  //   return Number(indexProduct);
+  // }
+
+  if (factMe < 0) return;
+  if (factMe < 2) return 1;
+
+  return factMe * factorial(factMe - 1);
 };
 
 // Do not edit below this line
