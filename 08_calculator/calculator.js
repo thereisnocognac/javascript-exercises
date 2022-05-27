@@ -1,13 +1,29 @@
-const add = function() {
-	
+const add = function(sum1, sum2) {
+	let totalSum;
+
+  totalSum = sum1 + sum2;
+
+  return totalSum;
 };
 
-const subtract = function() {
-	
+const subtract = function(sub1, sub2) {
+	let totalDiff;
+
+  totalDiff = sub1 - sub2;
+
+  return totalDiff;
 };
 
-const sum = function() {
-	
+const sum = function(sumARR) {
+	let sumARRTotal;
+
+  sumARRTotal = 0;
+
+  for(i = 0; i < sumARR.length; i++) {
+    sumARRTotal = sumARR[i] + sumARRTotal;
+  }
+
+  return sumARRTotal;
 };
 
 const multiply = function() {
